@@ -48,5 +48,6 @@
 #ifndef Y_CS_PIN
   #define Y_CS_PIN 63
 #endif
+#define PS_ON_PIN        4 // DHT - to ssr
 
 #include "pins_RAMPS.h"
