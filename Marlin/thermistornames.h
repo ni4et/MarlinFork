@@ -90,6 +90,12 @@
 #elif THERMISTOR_ID == 66
   #define THERMISTOR_NAME "Dyze 4.7M"
 
+// Generic NTC thermistor where BETA is known.
+#elif THERMISTOR_ID == 601
+  #define THERMISTOR_NAME "GENERIC NTC 601"
+#elif THERMISTOR_ID == 602
+  #define THERMISTOR_NAME "GENERIC NTC 602"
+
 // Dummies for dev testing
 #elif THERMISTOR_ID == 998
   #define THERMISTOR_NAME "Dummy 1"

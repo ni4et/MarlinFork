@@ -132,6 +132,13 @@
   #include "thermistortable_999.h"
 #endif
 
+#if ANY_THERMISTOR_IS(601) // Generic NTC table 1
+  #include "thermistortable_601.h"
+#endif
+#if ANY_THERMISTOR_IS(602) // Generic NTC table 2
+  #include "thermistortable_602.h"
+#endif
+
 #define _TT_NAME(_N) temptable_ ## _N
 #define TT_NAME(_N) _TT_NAME(_N)
 

@@ -1,4 +1,12 @@
-// User-defined table 602
+// Generic NTC table 602
+// Implements the Steinhart-Hart Equation with
+//  Beta defined at compile time
+// 1/T=1/T0+1/BETA*ln(R/R0)
+// The voltage divider at the ADC input with the thermistor
+// and the ln(R/R0) function is taken into account
+// in the table that is generated.  The compiler does the math
+// to generate the temperatures at selected points.
+
 
 #ifndef BETA602
 #error Pease define BETA602  in configuration.h according to thermistor specs.
